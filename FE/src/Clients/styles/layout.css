@@ -1,0 +1,28 @@
+:root{
+    --header-height: 4rem;
+}
+
+.cl-layout-container{
+    width: 100%;
+    height: 100%;
+}
+
+.cl-layout-container .layout-header{
+    width: 100%;
+    height: var(--header-height);
+}
+
+.cl-layout-container .layout-content{
+    width: 100%;
+    height: calc(100% - var(--header-height));
+    position: fixed;
+    top: var(--header-height);
+    right: 0;
+    z-index: 0;
+    background-color: var(--layout-content-background);
+    box-sizing: border-box;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

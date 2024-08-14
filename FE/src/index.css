@@ -1,0 +1,27 @@
+:root{
+  --primary-color: #ffa515;
+  --secondary-color: #2c3e50;
+  --sidebar-background: rgb(255, 255, 255);
+  --layout-content-background: #f0f0f0;
+  --text-black: #000000;
+  --text-white: #ffffff;
+}
+
+a{
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
+
+/* */
+.error-message{
+  color: red;
+  font-size: clamp(0.6rem, 2vw, 0.8rem);
+  margin: 0.1rem 0 0 0;
+}
+
+.asterisk-required{
+  color: red;
+}

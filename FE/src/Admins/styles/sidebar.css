@@ -1,0 +1,166 @@
+.sidebar{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: var(--sidebar-background);
+}
+
+.sidebar .brand-name{
+    width: 100%;
+    margin: 0;
+    padding: 2rem 0;
+    color: var(--text-black);
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Noto Serif Telugu", serif;
+    font-weight: 800;
+    span{
+        color: var(--primary-color)
+    }
+}
+
+.sidebar .avatar{
+    width: 35%;
+    border-radius: 50%;
+    margin: 0 auto;
+    outline: 0.2rem dashed var(--primary-color);
+    outline-offset: 0.4rem;
+    img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+}
+
+.sidebar .admin-name{
+    width: 100%;
+    margin: 1rem 0 0.2rem 0;
+    color: var(--text-black);
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.sidebar .admin-role{
+    width: 100%;
+    margin: 0 0 1rem 0;
+    color: #7d7d7d;
+    font-size: clamp(0.6rem, 2vw, 0.9rem);
+    font-weight: 500;
+    text-align: center;
+}
+
+.sidebar .list-link{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 0;
+    padding: 2rem 0 0 0;
+    box-sizing: border-box;
+    li{
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+.sidebar .list-link .link-name{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-black);
+    font-weight: 600;
+    box-sizing: border-box;
+    padding: 0 0 0 30%;
+}
+
+.sidebar .list-link .dropdown-menu{
+    width: 100%;
+    background-color: var(--sidebar-background);
+    box-sizing: border-box;
+    margin: 0.5rem 0 0 0;
+    padding: 0;
+    li{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 0 0 40%;
+    }
+}
+
+.sidebar .list-link .dropdown-menu li:not(:last-child){
+    margin: 0 0 0.2rem 0;
+}
+
+.sidebar .list-link .dropdown-menu li a{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+    box-sizing: border-box;
+    color: var(--text-black);
+}
+
+.sidebar .btn-logout{
+    position: absolute;
+    bottom: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: clamp(0.8rem, 2vw, 1rem);
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+}
+
+.sidebar .show{
+    display: block;
+}
+
+.sidebar .hide{
+    display: none;
+}
+
+.sidebar .active{
+    border-left: 0.3rem solid var(--primary-color);
+}
+
+.sidebar .inactive{
+    border-left: 0.3rem solid var(--sidebar-background);
+}
+
+@media only screen and (max-width: 360px) {
+    .sidebar .lg-size{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 360px) {
+    .sidebar .lg-size{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .sidebar .lg-size{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .sidebar .lg-size{
+        display: block;
+    }
+}
+

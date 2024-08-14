@@ -1,0 +1,372 @@
+.cl-home .poster{
+    width: 100%;
+    height: 30rem;
+    background-color: rgb(232, 232, 232);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    img{
+        height: 80%;
+        background-color: var(--primary-color);
+        border-radius: 50%;
+    }
+}
+
+.cl-home .poster .poster-content{
+    h1{
+        font-size: clamp(1rem, 5vw, 2.5rem);
+        font-weight: 600;
+        color: var(--primary-color);
+        margin: 0 0 clamp(0.2rem, 1vw, 0.5rem) 0;
+    }
+    h2{
+        font-size: clamp(0.6rem, 3vw, 1.2rem);
+        font-weight: 500;
+        color: var(--text-black);
+        margin: 0 0 clamp(1rem, 3vw, 2rem) 0;
+    }
+    p{
+        color: var(--text-black);
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+        font-size: clamp(0.6rem, 2vw, 1rem);
+    }
+}
+
+.cl-home .home-content{
+    display: grid;
+    grid-template-columns: 16rem 1fr;
+    gap: 2rem;
+    margin: 2rem 0;
+    padding: 2rem 0 0 0;
+}
+
+.cl-home .search-container {
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.cl-home .search-container input {
+    width: 100%;
+    height: 2.5rem;
+    border: none;
+    border-radius: 2rem;
+    outline: none;
+    box-sizing: border-box;
+    padding: 0 3rem 0 1rem;
+    background-color: rgb(255, 255, 255);
+    border: 0.1rem solid rgb(210, 210, 210);
+}
+
+.cl-home .search-container button{
+    width: 2.5rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(0.7rem, 2vw, 1rem);
+    font-weight: 600;
+}
+
+.cl-home .options{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 0 2rem 0;
+    h3{
+        font-size: clamp(0.7rem, 2vw, 1rem);
+        font-weight: 600;
+        margin: 0;
+        padding: 0;
+    }
+}
+.cl-home .options .show, .cl-home .options .sort{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(0.2rem, 2vw, 0.5rem);
+    select{
+        font-size: clamp(0.6rem, 2vw, 1rem);
+        padding: clamp(0.15rem, 1.5vw, 0.4rem) clamp(0.1rem, 1.5vw, 0.8rem);
+        box-sizing: border-box;
+        background-color: rgb(235, 235, 235);
+        border: 0.1rem solid rgb(210, 210, 210);
+    }
+}
+
+.cl-home .products-list {
+    display: grid;
+    box-sizing: border-box;
+}
+
+.cl-home .filter-container {
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    border-radius: 1rem;
+    padding: 1rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    h3{
+        font-size: clamp(0.8rem, 2vw, 1rem);
+        font-weight: 600;
+        margin: 0 0 0.5rem 0;
+        padding: 0;
+    }
+}
+
+.cl-home .filter-container .top {
+    display: flex;
+    justify-content: space-between;
+    h1{
+        font-size: clamp(1rem, 2vw, 1.3rem);
+        font-weight: 600;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.cl-home .filter-container .btn-unfilter{
+    width: fit-content;
+    padding: 0.4rem 1.5rem;
+    border: none;
+    border-radius: 1rem;
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    align-self: flex-end;
+    font-size: clamp(0.6rem, 2vw, 0.8rem);
+    font-weight: 600;
+}
+
+.cl-home .filter-container .btn-unfilter[disabled]{
+    display: none;
+}
+
+.cl-home .filter-container .bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.cl-home .filter-container .price{
+    ul{
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+        margin: 0;
+        padding: 0;
+    }
+    li{
+        padding: clamp(0.2rem, 2vw, 0.4rem) clamp(0.3rem, 2vw, 0.6rem);
+        border-radius: 1rem;
+        background-color: rgb(235, 235, 235);
+        cursor: pointer;
+        font-size: clamp(0.6rem, 2vw, 0.8rem);  
+    }
+}
+
+.cl-home .filter-container .price .active{
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.cl-home .filter-container .size{
+    h3{
+        margin: 0 0 0.1rem 0;
+    }
+    ul{
+        /* display: flex; */
+        /* flex-direction: column; */
+        gap: 0.4rem;
+        margin: 0;
+        padding: 0;
+    }
+    li{
+        padding: clamp(0.2rem, 2vw, 0.4rem) clamp(0.3rem, 2vw, 0.6rem);
+        border-radius: 1rem;
+        background-color: rgb(235, 235, 235);
+        cursor: pointer;
+        font-size: clamp(0.6rem, 2vw, 0.8rem);  
+        display: inline-block;
+        margin-top: 0.4rem;
+    }
+    li:not(:last-child){
+        margin-right: clamp(0.2rem, 0.8vw, 0.5rem);
+    }
+}
+
+.cl-home .filter-container .size .active{
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.cl-home .filter-container .color{
+    h3{
+        margin: 0 0 0.1rem 0;
+    }
+    ul{
+        /* display: flex; */
+        /* gap: 0.5rem; */
+        margin: 0;
+        padding: 0;
+    }
+    li{
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+        border: 0.01rem solid rgb(255, 255, 255);
+        position: relative;
+        display: inline-block;
+        outline-offset: 0.05rem;
+        margin-top: 0.4rem;
+    }
+    li:not(:last-child){
+        margin-right: 0.6rem;
+    }
+}
+
+.cl-home .filter-container .color li::after{
+    content: attr(data-color);
+    font-size: 0.8rem;
+    color: var(--text-black);
+    position: absolute;
+    margin: 0.5rem 0;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: none;
+    background-color: #515151;
+    color: white;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.4rem;
+    text-transform: capitalize;
+    z-index: 10;
+}
+
+.cl-home .filter-container .color li:hover::after{
+    display: block;
+}
+
+.cl-home .filter-container .color .active{
+    outline: 0.15rem solid var(--primary-color);
+}
+
+/*  */
+@media only screen and (max-width: 360px) {
+    .cl-home .products-list{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .cl-home .home-content{
+        grid-template-columns: 1fr;
+        padding: 0 0.5rem;
+    }
+    .cl-home .filter-container .bottom{
+        flex-direction: row;
+    }
+    .cl-home .poster{
+        height: 15rem;
+        img{
+            height: 60%;
+        }
+    }
+}
+    
+@media only screen and (min-width: 360px) {
+    .cl-home .products-list{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    .cl-home .home-content{
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+    }
+    .cl-home .filter-container .bottom{
+        flex-direction: row;
+    }
+    .cl-home .poster{
+        height: 20rem;
+        img{
+            height: 65%;
+        }
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .cl-home .products-list{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    .cl-home .home-content{
+        padding: 0 2rem;
+    }
+    .cl-home .poster{
+        height: 25rem;
+        img{
+            height: 70%;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .cl-home .products-list{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+    .cl-home .poster{
+        height: 30rem;
+        img{
+            height: 70%;
+        }
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .cl-home .products-list{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+    .cl-home .home-content{
+        grid-template-columns: 16rem 1fr;
+    }
+    .cl-home .filter-container .bottom{
+        flex-direction: column;
+    }
+    .cl-home .poster{
+        height: 30rem;
+        img{
+            height: 70%;
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .cl-home .products-list{
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.5rem;
+    }
+    .cl-home .poster{
+        height: 30rem;
+        img{
+            height: 80%;
+        }
+    }
+}
+
+
+

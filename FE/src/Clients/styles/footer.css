@@ -1,0 +1,80 @@
+.footer{
+    background-color: var(--sidebar-background);
+    color: white;
+    padding: 0;
+    box-sizing: border-box;
+    padding: 0 1rem;
+    margin: 2rem 0 0 0;
+}
+
+.footer .brand-name{
+    width: 100%;
+    margin: auto 0;
+    color: var(--text-black);
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    font-weight: 700;
+    text-decoration: none;
+    font-family: "Noto Serif Telugu", serif;
+    font-weight: 800;
+    span{
+        color: var(--primary-color)
+    }
+}
+
+.footer .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.footer .top .social-list{
+    display: flex;
+    gap: clamp(0.5rem, 2vw, 1rem);
+    color: var(--text-black);
+}
+
+.footer .top .social-list .social{
+    border: 0.1rem solid #6f6f6f;
+    width: clamp(1.2rem, 2.5vw, 1.5rem);
+    height: clamp(1.2rem, 2.5vw, 1.5rem);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(0.7rem, 2vw, 0.9rem);
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
+}
+
+.footer .top .social-list .social:hover{
+    background-color: var(--primary-color);
+    color: var(--text-white);
+    border-color: transparent;
+}
+
+.footer .top .social-list .phone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: clamp(0.8rem, 2vw, 1rem);
+    font-weight: 500;
+}
+
+.footer .bottom{
+    width: 100%;
+    border-top: 0.01rem solid #bbbbbb;
+}
+
+.footer .bottom .copyright{
+    width: 100%;
+    padding: 0.5rem 0;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: clamp(0.6rem, 2vw, 0.8rem);
+    color: #888888;
+    box-sizing: border-box;
+}

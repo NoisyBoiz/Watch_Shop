@@ -1,0 +1,198 @@
+.login {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(233, 233, 233);
+}
+
+.login .form{
+    width: 50vw;
+    height: 70vh;
+    background-color: rgb(245, 245, 245);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: -0.2rem -0.2rem 0.2rem 0 rgba(255, 255, 255), 0.4rem 0.4rem 0.8rem 0 rgba(0,0,0,0.3);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.login .form .left{
+    width: 100%;
+    /* height: 100%; */
+    padding: 3rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h1{
+        text-align: center;
+        margin: 0 0 2rem 0;
+        font-size: 2rem;
+        color: var(--primary-color);
+    }
+}
+
+.login .form .right{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: block;
+    background-image: url("https://i.pinimg.com/564x/9a/39/f6/9a39f6124565436730fb74582e584dc9.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1{
+        text-shadow: 0 0 0.5rem rgba(0,0,0,1);
+    }
+}
+
+.login label{
+    font-size: clamp(0.8rem, 1vw, 1.2rem);
+    font-weight: bold;
+    margin: 0 0 0.4rem 0;
+}
+
+.login input{
+    width: 100%;
+    padding: 0.8rem;
+    border: 0.05rem solid rgb(204, 204, 204);
+    border-radius: 5px; 
+    outline: none;
+    box-sizing: border-box;
+    background-color: rgb(231, 231, 231);
+}
+
+.login .form-group{
+    display: flex;
+    flex-direction: column;
+}
+
+.login .pass-input {
+    position: relative;
+    input{
+        padding: 0.8rem 2.5rem 0.8rem 0.8rem;
+    }
+    button{
+        position: absolute;
+        margin: 0 0.4rem;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        border: none;
+        font-size: 1rem;
+    }   
+}
+
+.login .form-group:not(:last-child){
+    margin-bottom: 1rem;
+}
+
+.login .show{
+    display: flex;
+}
+
+.login .hide{
+    display: none;
+}
+
+.login .btn-login{
+    width: 100%;
+    margin: 1rem 0 0 0;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    border: 0.15rem solid var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--text-white);
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+}
+
+.login .btn-login:hover{
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+/*  */
+
+@media only screen and (max-width: 360px) {
+    .login .form{
+        width: 100vw;
+        height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 30% 70%;
+        
+    }
+    .login .form .left{
+        order: 2;
+    }
+    .login .form .right{
+        order: 1;
+        border-radius: 0 0 1rem 1rem;
+    }
+}
+    
+@media only screen and (min-width: 360px) {
+    .login .form{
+        width: 100vw;
+        height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 30% 70%;
+        border-radius: 0;
+    }
+    .login .form .left{
+        order: 2;
+    }
+    .login .form .right{
+        order: 1;
+        border-radius: 0 0 1rem 1rem;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .login .form{
+        width: 60vw;
+        height: 90vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 30% 70%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .login .form{
+        width: 90vw;
+        height: 80vh;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        border-radius: 1.5rem;
+    }
+    .login .form .left{
+        order: 1;
+    }
+    .login .form .right{
+        order: 2;
+        border-radius: 0;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .login .form{
+        width: 75vw;
+        height: 70vh;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .login .form{
+        width: 55vw;
+    }
+}

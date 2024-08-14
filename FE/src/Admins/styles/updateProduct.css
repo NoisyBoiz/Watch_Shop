@@ -1,0 +1,207 @@
+.add-container{
+    width: 50%;
+    margin: 2rem auto;
+}
+
+.add-container .title{
+    font-size: clamp(1rem, 2vw, 2rem);
+    font-weight: bold;
+    display: block;
+    text-align: center;
+}
+
+.add-container .box-container{
+    background-color: rgb(255, 255, 255);
+    padding: 1rem;
+    margin: 0 0 1rem 0;
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+    box-shadow: -0.2rem -0.2rem 0.2rem 0 rgba(255, 255, 255), 0.2rem 0.2rem 0.2rem 0 rgba(0,0,0,0.3);
+    label{
+        font-size: clamp(0.8rem, 1vw, 1.2rem);
+        font-weight: bold;
+        margin: 0 0 0.4rem 0;
+    }
+}
+
+.add-container .btn-add, .btn-remove{
+    width: 2rem;
+    height: 2rem;
+    border: none;
+    border-radius: 0.4rem;
+    margin: 0 0 0 auto;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-container .btn-add{
+    background-color: var(--primary-color);
+    font-size: clamp(0.8rem, 3vw, 1.4rem);
+}
+
+.add-container .btn-remove{
+    background-color: rgb(255, 0, 30);
+    font-size: clamp(0.8rem, 1vw, 1rem);
+}
+
+.add-container input, .add-container textarea, .add-container select{
+    width: 100%;
+    padding: 0.5rem;
+    border: 0.05rem solid rgb(204, 204, 204);
+    border-radius: 5px; 
+    outline: none;
+    box-sizing: border-box;
+}
+
+.add-container input::placeholder{
+    color: #d2d2d2;
+}
+
+.add-container .top .form-group{
+    display: flex;
+    flex-direction: column;
+    textarea{
+        resize: none;
+        min-height: 8rem;
+    }
+}
+
+.add-container .top .form-group:not(:last-child){
+    margin-bottom: 1rem;
+}
+
+.add-container .middle .images{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.add-container .middle .images .image .input-box{
+    width: 100%;
+    margin: 0.5rem 0 0 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    gap: 0.4rem;  
+    input{
+        width: 50%;
+    }
+    input[type="file"]{
+        padding: 0.34rem;
+    }
+}
+
+.add-container .middle .images .image .eye{
+    width: 2rem;
+    height: 2rem;
+    border: 0.05rem solid rgb(204, 204, 204);
+    border-radius: 0.4rem;
+    font-size: clamp(0.8rem, 2vw, 1rem);
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-container .middle .form-group{
+    display: flex;
+    align-self: center;
+}
+
+.add-container .bottom .details{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.add-container .bottom .details .detail{
+    margin: 1rem 0 0 0;
+}   
+
+.add-container .bottom .details .detail:not(:last-child){
+    padding: 0 0 1rem 0;
+    border-bottom: 0.1rem dashed rgb(204, 204, 204);
+}
+
+.add-container .bottom .form-group .form-input{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 1rem;
+    margin: 0.5rem 0 0 0;
+}
+
+.add-container .bottom .select-color{
+    width: 100%;
+    display: flex;
+    gap: 0.5rem;
+    margin: 0;
+}
+
+.add-container .bottom .price-input{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.add-container .btn-save{
+    width: clamp(6rem, 20vw, 8rem);
+    height: clamp(2rem, 5vw, 2.5rem);
+    margin: 0 auto;
+    border: none;
+    border-radius: 0.4rem;
+    background-color: var(--primary-color);
+    border: 0.1rem solid var(--primary-color);
+    color: rgb(255, 255, 255);
+    font-size: clamp(0.8rem, 2vw, 1rem);
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+    display: block;
+    transition: all 0.25s ease-in-out;
+}
+
+.add-container .btn-save:hover{
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+
+@media only screen and (max-width: 360px) {
+    .add-container{
+        width: 100%;
+    }
+}
+    
+@media only screen and (min-width: 360px) {
+    .add-container{
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .add-container{
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .add-container{
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .add-container{
+        width: 60%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    
+}
